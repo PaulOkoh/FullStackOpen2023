@@ -5,6 +5,7 @@ import Filter from "./components/Filter";
 import PersonForm from "./components/PersonForm";
 import Person from "./components/Person";
 
+
 const App = () => {
   const [persons, setPersons] = useState([]);
   const [newName, setNewName] = useState("");
@@ -18,6 +19,7 @@ const App = () => {
       setPersons(response.data);
     });
   }, []);
+  
   
 
   const addName = (event) => {
